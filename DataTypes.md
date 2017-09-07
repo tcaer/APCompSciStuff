@@ -1,5 +1,3 @@
-### Review of basics from last year
-
 # Primitive Types
 - boolean
 - int, defaults to 0
@@ -17,3 +15,9 @@ int count;
 double x, y;
 String firstName;
 ````
+
+# Symbolic Constants
+
+Initialized `final` variables
+`private final int sidelength = 8;`
+Cannot modify value in the program
