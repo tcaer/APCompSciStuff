@@ -1,4 +1,4 @@
-#Binary
+# Binary
 
 Base 2
 Only represented in 1s and 0s
@@ -9,7 +9,7 @@ Only represented in 1s and 0s
 
 Subscript 10 means a number is in decimal
 
-#Octal
+# Octal
 
 Base 8
 37 base 8
@@ -33,7 +33,7 @@ Hexadecimal numbers range from 0 - f
 ````
 
 
-#Practice
+# Practice
 
 63 in decimal to binary
 ````
@@ -70,5 +70,3 @@ Number = 110001000
 3 units in binary are 1 unit in octal
 
 61A in hex => 3032 in octal
-
-

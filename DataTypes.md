@@ -16,5 +16,4 @@ Datatype first called by name of variable:
 int count;
 double x, y;
 String firstName;
-foo
 ````
