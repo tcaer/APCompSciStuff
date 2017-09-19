@@ -45,7 +45,17 @@ If you use `+` or `+=` then you use concatenation
 - `"flower".length()` -> 6
 - `"wind".charAt(2)` -> 'n'
 - `String result = s1 + s2`
-- 
+- `indexOf(Char)`
+- `indexOf(String)`
+- `indexOf(Char, int)`
+- `indexOf(String, int)`
+
+### Comparisons
+
+- `boolean b = s1.equals(s2)` - returns true if the String s1 equals s2
+- `boolean b = s1.equalsIgnoreCase(s2)` - returns true if the String s1 equals s2, case-blind
+- `int diff = s1.compareTo(s2)`
+- `int diff = s1.compareToIgnoreCase(s2)`
 
 ## Substring
 
