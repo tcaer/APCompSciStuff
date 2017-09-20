@@ -56,7 +56,30 @@ If you use `+` or `+=` then you use concatenation
 - `boolean b = s1.equalsIgnoreCase(s2)` - returns true if the String s1 equals s2, case-blind
 - `int diff = s1.compareTo(s2)`
 - `int diff = s1.compareToIgnoreCase(s2)`
+- `compareTo` - compares two strings lexicographically, based on the unicode value of each character in the String. Result is negative if the string object is smaller. Result is positive if the string object is bigger. Result if 0 if the String object is equals to the argument
 
+### Replacements
+
+- `String s2 = s1.trim();` - Returns a new string formed from s1 by removing whitespace from both ends
+- `String s2 = s1.replace(oldCh, newCh);` - Returns a new string that replaces every instance of the old character with the new character
+- `String s2 = s1.toUpperCase();` - Returns a new String that makes all characters upper case
+- `String s2 = s1.toLowerCase();` - Returns a new String that makes all characters lower case
+
+### Numbers to Strings
+
+- `String s = "" +n;`
+- `String s = Integer.toString(int);`
+- `String s = Double.toString(double);`
+
+````
+import java.text.DecimalFormat;
+
+DecimalFormat money = new DecimalFormat("0.00");
+
+double amt = 56.7381
+String s = money.format(amt); <- 56.74
+````
+ 
 ## Substring
 
 - `String s2 = s.substring(i, j)` - Return the substring of Chars in positions from i(inclusive) to j - 1(exclusive)
@@ -65,3 +88,15 @@ If you use `+` or `+=` then you use concatenation
 - `"unhappy".substring(2)` - "happy"
 - `"emptiness".substring(9)` - Returns an empty string ""
 - substring is an overloaded method
+
+````
+public static void main(String[] args) {
+	String str1 = "String method tutorial";
+	String str2 = "compareTo method example";
+	String str3 = "String method tutorial";
+
+	int var1 = str1.compareTo(str2); // is -16
+	int var2 = str1.compareTo(str3); // is 0
+	int var3 = str2.compareTo("compareTo method example"); // is 0
+}
+````
