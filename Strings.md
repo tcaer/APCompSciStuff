@@ -100,3 +100,23 @@ public static void main(String[] args) {
 	int var3 = str2.compareTo("compareTo method example"); // is 0
 }
 ````
+
+# Numbers from Strings
+
+`int n = Integer.parseInt("-123");`
+`double x = Double.parseDouble("123.45");`
+
+- int => Integer
+- double => Double
+- char => Character
+
+`NumberFormatException` => `Integer.parseInt("I went to the store 7 days ago");`
+
+# Character methods
+
+- `java.lang.Character` <= the "wrapper" class that represents characters in objeccts
+- `Character.isDigit(c);`
+- `Character.isLetter(c);`
+- `Character.isUpperCase(c);`
+- `Character.isLowerCase(c);`
+- `Character.isWhiteSpace(c);` - If the character is a space, tab, newline, etc.
