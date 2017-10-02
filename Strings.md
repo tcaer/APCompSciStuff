@@ -120,3 +120,13 @@ public static void main(String[] args) {
 - `Character.isUpperCase(c);`
 - `Character.isLowerCase(c);`
 - `Character.isWhiteSpace(c);` - If the character is a space, tab, newline, etc.
+- `Character.toUpperCase(c);`
+- `Character.toLowerCase(c);`
+
+# StringBuffer Class
+
+- Represents a string of Characters as a mutable object
+- Constructors:
+`StringBuffer()` - empty string buffer of default capacity
+`StringBuffer(n)` - empty string buffer of a given capacity
+`StringBuffer(str)` - converts str into a string buffer
