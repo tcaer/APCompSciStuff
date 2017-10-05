@@ -112,7 +112,14 @@ public static void main(String[] args) {
 
 `NumberFormatException` => `Integer.parseInt("I went to the store 7 days ago");`
 
-# Character methods
+# Character
+
+- `int d = Character.digit(ch, radix);` - Returns the int value of the digit ch in the given int radix
+- `Char ch = Character.forDigit(d, radix);` - Returns a char that represents int d in a given int radix
+- `Character.digit('7', 10);` - Returns 7
+- `Character.digit('A', 16);` - Returns 10
+
+## Character methods
 
 - `java.lang.Character` <= the "wrapper" class that represents characters in objeccts
 - `Character.isDigit(c);`
@@ -130,3 +137,6 @@ public static void main(String[] args) {
 `StringBuffer()` - empty string buffer of default capacity
 `StringBuffer(n)` - empty string buffer of a given capacity
 `StringBuffer(str)` - converts str into a string buffer
+
+- Methods: `setCharAt`, `insert`, `append`, `delete`, `toString`
+
