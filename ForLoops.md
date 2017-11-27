@@ -15,3 +15,7 @@ do {
 	}
 }
 ````
+
+# For Each Loops
+- Cannot add or remove elements within a for-each loop
+- You cannot change the values of elements within a for-each loop

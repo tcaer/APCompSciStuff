@@ -52,3 +52,26 @@ for (int r = 1; r < n; r++) {
 	}
 }
 ````
+
+## Inserting a Value
+````
+public boolean insert(double[] arr, int count, double value) {
+	if (count >= arr.length) {
+		return false;
+	}
+
+	int k = count - 1;
+
+	while (k >= 0 && arr[k] > value) {
+		arr[k + 1] = arr[k];
+		k--;
+	}
+
+	arr[k+1] = value;
+
+	return true;
+}
+````
+
+## ArrayList
+- Arrays have one limitation: once an array is created, its size cannot change
