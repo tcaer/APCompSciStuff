@@ -7,7 +7,7 @@
 - An array is an object
 - The array can be any type
 - `String cities = {"Atlanta", "Boston", "Cincinnati"};`
-- Length is a public field, not a method
+- Length is a public field, not a method &
 
 
 ## Indices

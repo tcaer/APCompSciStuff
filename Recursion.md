@@ -24,3 +24,14 @@ public static int addSquares(int n) {
 	}
 }
 ````
+
+- Recursion based the mathemtical concept that the definition of a function can use itself
+
+````
+public static int factorial(int n) {
+	if (n == 1) {
+		return 1;
+	} else {
+		return factorial(n-1) * n;
+	}
+}
