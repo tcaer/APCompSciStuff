@@ -23,7 +23,6 @@ class Test {
 		System.out.println();
 
 		Diploma diploma2 = new DiplomaWithHonors("Geraldine Corey", "Robotics");
-		System.out.println();
 		System.out.println(diploma2);
 		System.out.println();
 	}

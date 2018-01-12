@@ -4,6 +4,7 @@ public class DiplomaWithHonors extends Diploma {
 		super(name, course);
 	}
 
+	@Override
 	public String toString() {
 		return "This certifies that " + super.name + "\nhas completed a MOOC in " + super.course + "\n*** with honors ***";
 	}
