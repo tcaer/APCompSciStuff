@@ -64,3 +64,6 @@ public int binarySearch(int[] arr, int value, int left, int right) {
 	- A directory of files sorted by name or date
 	- Bank checks sorted by account #
 	- Addresses in a mailing list sorted yb zip code
+- How fact can we sort an array of n elements
+	- If we compare each element to each other we need `n(n - 1) / 2` comparisons (that is, `n^2` by the order of magnitude)
+	- Faster "divide and conquer" need approximately `n*log2n` comparisons
