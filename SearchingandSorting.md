@@ -67,3 +67,54 @@ public int binarySearch(int[] arr, int value, int left, int right) {
 - How fact can we sort an array of n elements
 	- If we compare each element to each other we need `n(n - 1) / 2` comparisons (that is, `n^2` by the order of magnitude)
 	- Faster "divide and conquer" need approximately `n*log2n` comparisons
+
+### Selection Sort
+- Select the max value amongst the first n elements
+- Swap it with the n-th element
+- Decrement n by 1 and repeat from step 1 (while n > 1)
+- Iterative implementation
+````
+public void selectionSort(double[] arr, int n) {
+	while (n > 1) {
+		int maxPos = 0;
+
+		for (int k = 1; i < n; k++) {
+			if (arr[k] > arr[maxPos]) {
+				maxPos = k;
+			}
+		}
+
+		double temp = arr[maxPos];
+		arr[maxPos] = arr[n - 1];
+
+		n--;
+	}
+}
+````
+- The total number of comparisons `(n - 1) + (n - 2) + 1 = n(n - 1) / 2`
+
+### Insertion Sort
+- `k = 1;` keep the first k elements in order
+- Take the (k + 1)-th element and insert among the first k in the right place
+- Increment k by 1; repeat from step 2 (while k < n)
+- Iterative Implementation
+````
+public void insertionSort(double[] arr, int n) {
+	for (int k = 1; k < n; k++) {
+		double temp = arr[k];
+
+		int i = k;
+
+		while (i > 0 && arr[i - 1] > temp) {
+			arr[i] = arr[i - 1];
+			i--;
+		}
+
+		arr[i] = temp;
+	}
+}
+````
+- The total number of comparis is have that of selection sort
+	- The best case is when the array is already sorted => `(n - 1)` comparison
+	- The worst case is `n(n - 1) / 2` when the array is sorted in reverse
+	- On average, an `O(n^2)` algorithm
